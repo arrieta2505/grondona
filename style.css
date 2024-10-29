@@ -1,0 +1,61 @@
+/* Establece los estilos básicos del cuerpo del documento */
+body {
+    /* Define la fuente utilizada para el texto del cuerpo. Sans-serif proporciona un aspecto limpio y moderno */
+    font-family: sans-serif;
+    /* Elimina el margen predeterminado del cuerpo para evitar espacios no deseados */
+    margin: 0;
+}
+
+/* Establece los estilos para el contenedor principal */
+.contenedor {
+    /* Utiliza flexbox para organizar los elementos dentro del contenedor */
+    display: flex;
+    /* Permite que los elementos secundarios se ajusten a múltiples líneas si no caben en una sola */
+    flex-wrap: wrap;
+    /* Distribuye el espacio entre los elementos de manera uniforme alrededor del contenedor */
+    justify-content: space-around;
+    /* Añade espacio interno alrededor del contenido del contenedor */
+    padding: 20px;
+}
+
+/* Define el estilo para los elementos que representan una tarjeta */
+.tarjeta {
+    /* Establece el ancho fijo de la tarjeta, lo que asegura una consistencia en el diseño */
+    width: 300px;
+    /* Agrega un margen externo alrededor de la tarjeta para separarla de otros elementos */
+    margin: 10px;
+    /* Define un borde delgado y gris alrededor de la tarjeta para delimitar su área */
+    border: 1px solid #ccc;
+    /* Añade espacio interno dentro de la tarjeta, asegurando que el contenido no toque los bordes */
+    padding: 20px;
+    /* Redondea las esquinas de la tarjeta para un aspecto más suave y moderno */
+    border-radius: 5px;
+    /* Aplica una sombra sutil para dar profundidad a la tarjeta, haciendo que parezca elevada */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Aplica estilos a las imágenes dentro de los elementos de clase tarjeta */
+.tarjeta img {
+    /* Establece el ancho de la imagen al 100% del contenedor, asegurando que se ajuste a su tamaño */
+    width: 100%;
+    /* Ajusta la altura de la imagen automáticamente para mantener la proporción original */
+    height: auto;
+    /* Hace que la imagen se muestre como un bloque, eliminando espacios en la parte inferior */
+    display: block;
+    /* Redondea las esquinas superiores de la imagen, para que coincida con el diseño de la tarjeta */
+    border-radius: 5px 5px 0 0;
+}
+
+/* Aplica estilos a los encabezados h3 dentro de los elementos de clase tarjeta */
+.tarjeta h3 {
+    /* Establece un margen superior para separar el encabezado del contenido anterior */
+    margin-top: 10px;
+}
+
+/* Aplica estilos a los párrafos dentro de los elementos de clase tarjeta */
+.tarjeta p {
+    /* Define el tamaño de la fuente del párrafo, utilizando un valor relativo para mayor adaptabilidad */
+    font-size: 0.9em;
+    /* Establece la altura de línea para mejorar la legibilidad del texto */
+    line-height: 1.5;
+}
